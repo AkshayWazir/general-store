@@ -6,7 +6,12 @@ export default function TopNavBar(props) {
   return (
     <div className="TopNavBar-container">
       <p className="TopNavBar-title">General-Store</p>
-      <input type="text" className="TopNavBar-search" placeholder="Search" />
+      <input
+        type="text"
+        className="TopNavBar-search"
+        placeholder="Search"
+        onChange={(e) => onSearchChange(e.target.value)}
+      />
       <span className="TopNavBar-icon-cont">
         <img src="images/cart.svg" className="TopNavTabIcon" alt="" />
         {cartToolTip > 0 && <span className="TopNav-tooltip">{cartToolTip}</span>}

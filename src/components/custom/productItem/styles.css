@@ -9,6 +9,12 @@
   grid-template-columns: 60% 40%;
   grid-template-rows: 60% 40%;
   overflow: hidden;
+  transition: all 0.5s;
+}
+
+.product-item-cont:hover {
+  transition: all 0.5s;
+  box-shadow: 1vh 1vh 4vh grey;
 }
 
 .product-item-image {

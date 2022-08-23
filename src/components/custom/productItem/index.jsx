@@ -3,7 +3,11 @@ import AddToCart from "../addToCart";
 import "./styles.css";
 
 export default function ProductItem(props) {
-  const { data = { name: "", img: "", detail: "" } } = props;
+  const {
+    data = { name: "", img: "", detail: "" },
+    increment = () => {},
+    decrement = () => {},
+  } = props;
   const [items, setItems] = useState(0);
 
   return (
@@ -15,8 +19,14 @@ export default function ProductItem(props) {
       </span>
       <AddToCart
         count={items}
-        addToCart={() => setItems(items + 1)}
-        removeFromCart={() => setItems(items - 1)}
+        addToCart={() => {
+          setItems(items + 1);
+          increment();
+        }}
+        removeFromCart={() => {
+          setItems(items - 1);
+          decrement();
+        }}
       />
     </div>
   );
