@@ -2,3 +2,8 @@
   height: 100vh;
   width: 100vw;
 }
+
+.browsing-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

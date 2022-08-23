@@ -1,0 +1,27 @@
+@import url("../../../globalStyles.css");
+
+.addtocart-cont-1 {
+  height: 4vh;
+  width: 10vh;
+  font-family: var(--font);
+  border: 0.1vh solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1vh;
+  cursor: pointer;
+  margin: auto;
+}
+
+.addtocart-cont-2 {
+  height: 4vh;
+  width: 10vh;
+  font-family: var(--font);
+  border: 0.1vh solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1vh;
+  cursor: pointer;
+  margin: auto;
+}

@@ -1,0 +1,30 @@
+@import url("../../../globalStyles.css");
+.product-item-cont {
+  height: 40vh;
+  width: 30vw;
+  border: 0.1vh solid grey;
+  border-radius: 1vh;
+  margin: 2vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 60% 40%;
+  overflow: hidden;
+}
+
+.product-item-image {
+  height: 100%;
+  width: 100%;
+  grid-column: 1 / span 2;
+}
+
+.product-item-title {
+  font-family: var(--font);
+  font-size: 3vh;
+  font-weight: 200;
+  margin: 0;
+}
+.product-item-detail {
+  font-family: var(--font);
+  font-size: 2vh;
+  margin: 0;
+}
