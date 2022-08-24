@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import AddToCart from "../addToCart";
 import "./styles.css";
+// * this is used to navigate to different routes
+import { useNavigate } from "react-router-dom";
 
 export default function ProductItem(props) {
+  let navigate = useNavigate();
+
   const {
     data = { name: "", img: "", detail: "" },
     increment = () => {},
@@ -14,7 +18,9 @@ export default function ProductItem(props) {
     <div className="product-item-cont">
       <img src={data.img} alt="product" className="product-item-image" />
       <span style={{ padding: "1vh" }}>
-        <p className="product-item-title">{data.name}</p>
+        <p className="product-item-title" onClick={() => navigate("/detail")}>
+          {data.name}
+        </p>
         <p className="product-item-detail">{data.detail}</p>
       </span>
       <AddToCart
