@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.css";
+import CartImage from "../../../assets/images/cart.svg";
+import ProfileImage from "../../../assets/images/profile.svg";
 
 export default function TopNavBar(props) {
   const { onSearchChange, cartToolTip = 0 } = props;
@@ -13,11 +15,11 @@ export default function TopNavBar(props) {
         onChange={(e) => onSearchChange(e.target.value)}
       />
       <span className="TopNavBar-icon-cont">
-        <img src="images/cart.svg" className="TopNavTabIcon" alt="" />
+        <img src={CartImage} className="TopNavTabIcon" alt="" />
         {cartToolTip > 0 && <span className="TopNav-tooltip">{cartToolTip}</span>}
       </span>
       <span className="TopNavBar-icon-cont">
-        <img src="images/profile.svg" className="TopNavTabIcon" alt="" />
+        <img src={ProfileImage} className="TopNavTabIcon" alt="" />
       </span>
     </div>
   );
