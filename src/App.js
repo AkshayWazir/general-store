@@ -1,11 +1,15 @@
 import "./globalStyles.css";
-import { Browsing } from "./screens";
+import { Browsing, Details } from "./screens";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Browsing />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Browsing />} />
+        <Route path="/detail" element={<Details />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
