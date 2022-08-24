@@ -18,7 +18,7 @@ export default function ProductItem(props) {
     <div className="product-item-cont">
       <img src={data.img} alt="product" className="product-item-image" />
       <span style={{ padding: "1vh" }}>
-        <p className="product-item-title" onClick={() => navigate(`/detail/${data.name}`)}>
+        <p className="product-item-title" onClick={() => navigate(`/detail/${data.id}`)}>
           {data.name}
         </p>
         <p className="product-item-detail">{data.detail}</p>
