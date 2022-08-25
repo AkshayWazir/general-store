@@ -32,6 +32,37 @@ const productsData = [
     detail: "These are simple pants in black with great material and fit try it once.",
     img: Tshirt,
   },
+  {
+    id: 5,
+    name: "Pants",
+    detail: "These are simple pants in black with great material and fit try it once.",
+    img: Tshirt,
+    moreImage: [],
+  },
+  {
+    id: 6,
+    name: "Shoes",
+    detail: "These are simple pants in black with great material and fit try it once.",
+    img: Tshirt,
+  },
+  {
+    id: 7,
+    name: "Hats",
+    detail: "These are simple pants in black with great material and fit try it once.",
+    img: Tshirt,
+  },
+  {
+    id: 8,
+    name: "Bags",
+    detail: "These are simple pants in black with great material and fit try it once.",
+    img: Tshirt,
+  },
+  {
+    id: 9,
+    name: "Slippers",
+    detail: "These are simple pants in black with great material and fit try it once.",
+    img: Tshirt,
+  },
 ];
 
 export function getBrowsingData() {

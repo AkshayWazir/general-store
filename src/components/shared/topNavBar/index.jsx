@@ -18,21 +18,21 @@ export default function TopNavBar(props) {
     if (isTabletOrMobile) {
       return (
         <div className="TopNavBar-container-mobile">
-          <span>
-            <img src={HomeIcon} alt="home" />
-            <span>home</span>
+          <span style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
+            <img src={HomeIcon} alt="home" className="tocomo-icon" />
+            <span className="tocomo-title">home</span>
           </span>
-          <span>
-            <img src={ClothesIcon} alt="home" />
-            <span>Clothes</span>
+          <span style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
+            <img src={ClothesIcon} alt="home" className="tocomo-icon" />
+            <span className="tocomo-title">Clothes</span>
           </span>
-          <span>
-            <img src={PhoneIcon} alt="home" />
-            <span>phone</span>
+          <span style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
+            <img src={PhoneIcon} alt="home" className="tocomo-icon" />
+            <span className="tocomo-title">phone</span>
           </span>
-          <span>
-            <img src={SearchIcon} alt="home" />
-            <span>search</span>
+          <span style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
+            <img src={SearchIcon} alt="home" className="tocomo-icon" />
+            <span className="tocomo-title">search</span>
           </span>
         </div>
       );
