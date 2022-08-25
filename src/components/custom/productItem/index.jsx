@@ -3,9 +3,11 @@ import AddToCart from "../addToCart";
 import "./styles.css";
 // * this is used to navigate to different routes
 import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 export default function ProductItem(props) {
   let navigate = useNavigate();
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   const {
     data = { name: "", img: "", detail: "" },
