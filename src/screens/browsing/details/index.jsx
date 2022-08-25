@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { TopNav } from "../../components";
+import { TopNav } from "../../../components";
 import "./styles.css";
 import { useParams } from "react-router-dom";
-import { getProduct } from "../../api/browsingAPI";
+import { getProduct } from "../../../api/browsingAPI";
 
 export default function Details(prosp) {
   const [productData, setProductData] = useState({});
@@ -13,11 +13,8 @@ export default function Details(prosp) {
   }, []);
 
   return (
-    <div>
-      <TopNav />
-      <div className="details-screen">
-        <div className="details-image-sec"></div>
-      </div>
+    <div className="details-screen">
+      <div className="details-image-sec"></div>
     </div>
   );
 }
