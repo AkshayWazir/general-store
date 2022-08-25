@@ -4,6 +4,10 @@ import CartImage from "../../../assets/images/cart.svg";
 import ProfileImage from "../../../assets/images/profile.svg";
 import { useNavigate } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
+import HomeIcon from "../../../assets/images/home.svg";
+import ClothesIcon from "../../../assets/images/clothes.svg";
+import PhoneIcon from "../../../assets/images/phone.svg";
+import SearchIcon from "../../../assets/images/search.svg";
 
 export default function TopNavBar(props) {
   const { onSearchChange, cartToolTip = 0 } = props;
@@ -12,7 +16,26 @@ export default function TopNavBar(props) {
 
   function renderCompoent() {
     if (isTabletOrMobile) {
-      return <div className="TopNavBar-container-mobile"></div>;
+      return (
+        <div className="TopNavBar-container-mobile">
+          <span>
+            <img src={HomeIcon} alt="home" />
+            <span>home</span>
+          </span>
+          <span>
+            <img src={ClothesIcon} alt="home" />
+            <span>Clothes</span>
+          </span>
+          <span>
+            <img src={PhoneIcon} alt="home" />
+            <span>phone</span>
+          </span>
+          <span>
+            <img src={SearchIcon} alt="home" />
+            <span>search</span>
+          </span>
+        </div>
+      );
     } else {
       return (
         <div className="TopNavBar-container">
