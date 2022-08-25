@@ -16,9 +16,8 @@
 @media screen and (max-width: 1224px) {
   .browsing-content {
     height: 93vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
     overflow-y: scroll;
   }
 }
