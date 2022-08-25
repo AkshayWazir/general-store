@@ -76,3 +76,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.TopNavBar-container-mobile {
+  height: 8vh;
+  width: 100%;
+}
